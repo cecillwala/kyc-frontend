@@ -1,0 +1,30 @@
+<div class="chat-room">
+    <nav>
+        <h1>Customer Support</h1>
+    </nav>
+    <img src="assets/arrow-back.png" class="arrow-back" (click)="togglePreviousPage()"/>
+    <mat-card class="chat-container">
+        <!-- <img src="assets/arrow-back.png"/> -->
+        <section #chatBox class="chat-box">
+            @for (message of messages(); track message.id) {
+                @if (!message.admin){
+                    <app-sender [message]="message"/>
+                }
+                @else{
+                    <app-receiver [message]="message"/>
+                }
+            }
+        
+        </section>
+        <form class="chat-form" (ngSubmit)="onSubmit()">
+            <input
+            type="text"
+            class="search"
+            autocomplete="off"
+            name="query"
+            [(ngModel)]="query().text"
+            placeholder="Ask me something"/>
+            <button type="submit" class="search-btn">&#8593;</button>
+        </form>
+    </mat-card>
+</div>

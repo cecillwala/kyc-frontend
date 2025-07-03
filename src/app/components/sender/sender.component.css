@@ -1,0 +1,29 @@
+.right-text-bubble{
+    text-align: left;
+    color: #fff;
+    background-color: #b8b6b6;
+    width:fit-content;
+    margin: 5px;
+    border-radius: 15px;
+    padding: 20px;
+    margin-left: auto;
+    background-color: #4598eb;
+    grid-row: 1;
+    grid-column: 3; 
+}
+
+.receiver-container{
+    display: flex;
+    
+}
+
+.user-icon{
+    width: 45px;
+}
+
+@media(min-width: 480px){
+    .right-text-bubble{
+        padding: 10px;
+        font-size: 1em;
+    }
+}

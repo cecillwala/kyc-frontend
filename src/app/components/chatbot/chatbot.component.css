@@ -1,0 +1,110 @@
+.chat-icon {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 10;
+  position: fixed;
+  overflow: visible;
+  top: 95vh;
+  left: 95vw;
+  transform: translate(-50%, -50%); /* Center the icon visually on that point */
+  transition: all 0.3s ease;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .chat-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .chat-icon:hover{
+    width: 55px;
+    height: 55px;
+    transition: all 200ms ease;
+}
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .chat-icon {
+    width: 44px;
+    height: 44px;
+    top: 90vh;
+    left: 90vw;
+  }
+
+  .chat-icon:hover{
+    width: 49px;
+    height: 49px;
+    transition: all 200ms ease;
+}
+}
+
+.chat-icon:hover{
+    width: 65px;
+    height: 65px;
+    transition: all 200ms ease;
+}
+
+.chatbot-container{
+    z-index: 10;
+}
+
+
+
+.chat-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-flow: column nowrap;
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+  left: 1vw;
+  height: 75.5vh;
+  width: 30vw;
+}
+
+@media(min-width:480px){
+    .chat-container{
+        height: 20vh;
+    }
+}
+
+.chat-box{
+    border: none;
+    border-radius: 10px;
+    overflow-y: auto;
+    /* width: 100%;*/
+    height: 70vh;
+    background-color: rgb(255, 255, 255)9fa;
+}
+
+.chat-form{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.search{
+    width: 100%;
+    padding: 20px;
+    border: 1px #ccc solid;
+    border-radius: 16px;
+    font-size: 18px;
+    outline: none;
+}
+
+.search-btn{
+    width: 15%;
+    background-color: #4598eb;
+    color: #f8f9fa;
+    border: 1px #4598eb solid;
+    font-size: 40px;
+    border-radius: 18px;
+    outline: none;
+    cursor: pointer;
+}

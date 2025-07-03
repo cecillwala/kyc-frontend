@@ -1,0 +1,17 @@
+.left-text-bubble{
+    text-align: left;
+    color: #fff;
+    background-color: #b8b6b6;
+    width:fit-content;
+    margin: 5px;
+    border-radius: 15px;
+    padding: 20px;
+    margin-left: 0;
+}   
+
+@media(max-width: 480px){
+    .left-text-bubble{
+        padding: 10px;
+        font-size: 1em;
+    }
+}
